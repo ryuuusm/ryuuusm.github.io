@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Strict CSP: the page is fully static, so block every script and external resource. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>ryuuusm apps</title>
+  <style>
+    /* Minimal, dependency-free styling with light/dark support. */
+    :root { --bg:#fff; --fg:#1a1a1a; --muted:#666; --line:#e5e5e5; --link:#0b57d0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#121212; --fg:#eee; --muted:#aaa; --line:#333; --link:#8ab4f8; }
+    }
+    body { margin:0; background:var(--bg); color:var(--fg);
+           font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width:720px; margin:0 auto; padding:32px 16px; }
+    h1 { margin:0 0 4px; font-size:1.6rem; }
+    p.sub { margin:0 0 24px; color:var(--muted); }
+    table { width:100%; border-collapse:collapse; }
+    th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); }
+    a { color:var(--link); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ryuuusm</h1>
+    <p class="sub">Android 앱 · 게임 개발자 공식 사이트</p>
+
+    <h2>앱 목록 및 개인정보처리방침</h2>
+    <table>
+      <thead><tr><th>앱</th><th>개인정보처리방침</th></tr></thead>
+      <tbody>
+        <!-- External links open in a new tab with noopener/noreferrer to prevent tabnabbing. -->
+        <tr><td>롤바운드</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/dicerogue.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>네온 시즈</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/survivor.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>미니 땅굴 파기</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/digger.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>작은 포션 가게</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/potion.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>용 랜타디</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/dragon.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>로봇 기지 키우기</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/botbase.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>사진 금고</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/photovault.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>사진첩-잠자는쿠폰찾기</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/giftcon.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>얼마냈지</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/gyeongjo.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+        <tr><td>같은구도 카메라</td><td><a href="https://github.com/ryuuusm/privacy/blob/main/samecam.md" target="_blank" rel="noopener noreferrer">보기</a></td></tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
